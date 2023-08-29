@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav {
+    height: 40px;
+    background-color: rgb(41, 41, 92);
+    width: 100%;
+    box-shadow: 5px 3px 10px;
+    position: relative;
+    /* Added position relative for positioning .line */
+}
+
+.navbtn {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    float: right;
+    transition: .3s ease;
+}
+
+.line {
+    width: 55px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 32px;
+    float: right;
+    right: 249px;
+    border-radius: 50%;
+    transition: .3s ease;
+    /* Added transition property */
+}
+
+/* Adjust the right value for each nav button */
+.navbtn:nth-child(1):hover~.line {
+    right: calc(247px);
+}
+
+.navbtn:nth-child(2):hover~.line {
+    right: calc(13px);
+}
+
+.navbtn:nth-child(3):hover~.line {
+    right: calc(88px);
+}
+
+.navbtn:nth-child(4):hover~.line {
+    right: calc(170px);
+}
+
+.navbtn:nth-child(5):hover~.line {
+    right: calc(249px);
+}
+
+/* Add more styles for other nav buttons if needed */
+
+.navbtn:hover {
+    transition: .3s ease;
+}
+
+.homeimg {
+    width: 100px;
+    border-radius: 0px 0px 50%;
+    box-shadow: 2px 3px 10px;
+    transition: .3s ease;
+}
+
+.homeimg:hover {
+    transition: .3s ease;
+    filter: saturate(1.2) contrast(1.2);
+    cursor: pointer;
+    width: 110px;
+}
