@@ -1,0 +1,193 @@
+@font-face {
+  font-family: Monaco;
+  src: url(./monaco.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+}
+
+body {
+  max-width: 100vw;
+  width: 100vw;
+  margin: 0px;
+  font-family: Monaco;
+  overflow-x: hidden;
+}
+
+.nav {
+  height: 40px;
+  background-color: rgb(41, 41, 92);
+  width: 100vw;
+  box-shadow: 5px 3px 10px;
+  position: relative;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+.navbtn {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  float: right;
+  transition: 0.3s ease;
+  font-size: 30px;
+  text-shadow: 0px 0px black;
+}
+
+.navbtn:hover {
+  text-shadow: 2px 2px black;
+}
+
+.line {
+  width: 82px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 32px;
+  float: right;
+  right: 7px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.navbtn:nth-child(2):hover ~ .line {
+  right: calc(7px);
+  width: 82px;
+}
+
+.navbtn:nth-child(3):hover ~ .line {
+  right: calc(103px);
+  width: 62px;
+}
+
+.navbtn:nth-child(4):hover ~ .line {
+  right: 175px;
+  width: 105px;
+}
+
+.navbtn:nth-child(5):hover ~ .line {
+  right: 290px;
+  width: 55px;
+}
+
+.headerimg {
+width: 100vw;
+margin-top: -19.49%;
+box-shadow: 0px 0px 100px rgb(78, 78, 78);
+}
+
+.homeimg {
+  width: 100px;
+  border-radius: 0px 0px 50%;
+  box-shadow: 0px 0px 10px black;
+  transition: 0.3s ease;
+}
+
+.homeimg:hover {
+  transition: 0.3s ease;
+  filter: saturate(1.1) contrast(1.1);
+  cursor: pointer;
+  width: 110px;
+}
+
+.name {
+  left: 400px;
+  right: 0;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 100%;
+  margin-top: 40vh;
+  color: white;
+  font-size: 1000%;
+  filter: opacity(0.9); 
+  animation: nameIn 1.5s ease-in-out;
+  text-shadow: 5px 5px 3px black;
+}
+@keyframes nameIn {
+  from {
+    transform: translatey(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+.contactbox {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 20px black;
+  width: 800px;
+}
+
+form {
+  margin-top: 10vh;
+}
+
+label {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+input {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 80%;
+}
+
+.bericht {
+   background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 80%;
+  height: 100px;
+  resize: none;
+}
+
+#button {
+  width: 150px;
+  padding: 20px;
+  margin-top: 30px;
+   transition: .5s ease;
+}
+
+#button:hover {
+  cursor: pointer;
+  border-radius: 10px ;
+  transition: .5s ease;
+  background-color: rgb(54, 54, 54);
+  box-shadow: 3px 3px 10px black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgba(41, 41, 92, 0.8); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(33, 33, 75, 0.8); 
+}

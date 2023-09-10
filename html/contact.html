@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="shortcut icon" href="../media/icon.png" type="image/x-icon">
+    <script src="../js/hidebtn.js"></script>
+</head>
+<body>
+    <div class="nav">
+       <a href="../index.html"> <img class="homeimg" src="../media/image (2).jpeg" alt=""></a>
+        <a class="navbtn" href="./contact.html">Contact</a>
+        <a class="navbtn" href="./about.html">About</a>
+        <a class="navbtn" href="./projecten.html">Projecten</a>
+        <a class="navbtn" href="../index.html">Home</a>
+        <div class="line"></div>
+    </div>
+    <div class="header">
+        <div class="name">Contact</div>
+        <img class="headerimg" src="../media/climb.jpg" alt="">
+    </div>
+
+<div class="contactbox">
+<center>
+<form method="post" action="./email.php">
+    <input type="text" id="fname" name="naam" placeholder="Naam" maxlength="50" required><br><br>
+    <input type="email" id="lname" name="email" placeholder="E-mail" required maxlength="50"><br><br>
+    <input type="text" id="Onderwerp" name="onderwerp" placeholder="Onderwerp" maxlength="70" required><br><br>
+    <textarea class="bericht" name="bericht" id="bericht" cols="30" rows="10" maxlength="600" placeholder="Bericht"></textarea>
+    <input id="button" type="submit" name="Stuur" id="Stuur" value="Verstuur" onclick="hide()">
+</form>
+</center>
+
+
+</div>
+
+
+</body>
+</html>
