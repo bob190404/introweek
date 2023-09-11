@@ -7,15 +7,15 @@
 
     $onderwerp= $_POST['onderwerp'];
 
-    $to = "bob190404@gmail.com";
+    $to = $email;
 
     $bericht = $_POST['bericht'];
 
-    $txt = $naam . "\r\n" . $email . "\r\n" . $bericht;
+    $txt = $naam . "\r\n" . $email . "\r\n" . $onderwerp . "\r\n" . $bericht;
 
     $headers = "From: bob190404@gmail.com" ;
 
-    $txt2 = "Bedankt voor je vraag, we komen zo snel mogelijk bij je terug." . "\r\n" . "\r\n" . $naam . "\r\n" . $email . "\r\n" . "\r\n" . $bericht;
+    $txt2 = $naam . "\r\n" . "Hoi! leuk dat je in contact wilt komen!! /r/n Ik heb uw vraag ontvangen en zal er binnenkort op terug komen!" . "\r\n" . "\r\n" . $email . "\r\n" . $onderwerp . "\r\n" . $bericht;
 
     if($email!=NULL){
 
