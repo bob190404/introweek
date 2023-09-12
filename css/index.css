@@ -99,6 +99,7 @@ body {
   margin-left: -220px;
   height: 120vh;
   margin-top: -50px;
+  pointer-events: none;
 }
 
 .name {
@@ -407,22 +408,29 @@ width: 80vw;
   background: rgba(33, 33, 75, 0.8); 
 }
 
+.topnav {
+  display: none;
+}
+
 
 /* /\ responsiveness code /\*/
 
 @media screen and (min-width: 1900px) {
-    
-.overmij2 {
-  top: 44vh;
-}
+    .overmij2 {
+      top: 44vh;
+    }
 
-.overmij3 {
-  top: 44vh;
-}
+    .overmij3 {
+      top: 44vh;
+    }
 
   }
 
   @media screen and (max-width: 500px) {
+
+html {
+  overflow-y: hidden ;
+}
 
 .nav {
   max-width: 120vw;
@@ -468,6 +476,7 @@ width: 80vw;
   z-index: 2;
   position: sticky;
   top: 0;
+  display: block;
 }
 
 .topnav #myLinks {
@@ -531,7 +540,7 @@ a.link {
 
 .overmij {
   display: block;
-  top: 2vh;
+  top: 40vh;
   left: 20px;
   width: 300px;
 }
@@ -542,7 +551,7 @@ a.link {
 
 .overmij2 {
   display: block;
-  top: 5vh;
+  top: 45vh;
   left: 20px;
   width: 300px;
   
@@ -554,7 +563,7 @@ a.link {
 
 .overmij3 {
   display: block;
-  top: 10vh;
+  top: 50vh;
   left: 20px;
   width: 300px;
   
@@ -586,7 +595,17 @@ a.link {
 }
 
 .webtext {
-  height: 1400px;
+  height: 1900px;
 }
+
+
+.animatie {
+animation: none;
+}
+
+.animatie2 {
+animation: none;
+}
+
 
   }

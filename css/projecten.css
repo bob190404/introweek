@@ -81,7 +81,7 @@ height: 100vh;
 
 .headerimg {
 width: 100vw;
-margin-top: -35%;
+margin-top: -17%;
 box-shadow: 10px 10px 100px;
 }
 
@@ -107,7 +107,7 @@ box-shadow: 10px 10px 100px;
   margin-right: auto;
   position: absolute;
   width: 100%;
-  margin-top: 10vh;
+  margin-top: 40vh;
   color: white;
   font-size: 1000%;
   filter: opacity(0.7); 
@@ -388,6 +388,10 @@ width: 80vw;
   display: none;
 }
 
+.topnav {
+  display: none;
+}
+
 @media screen and (min-width: 1900px) {
     
 #hidden {
@@ -447,6 +451,7 @@ width: 80vw;
   z-index: 2;
   position: sticky;
   top: 0;
+  display: block;
 }
 
 .topnav #myLinks {

@@ -428,6 +428,10 @@ width: 80vw;
   background: rgba(33, 33, 75, 0.8); 
 }
 
+.topnav {
+  display: none;
+}
+
 
 /* responsiveness code */
 
@@ -490,6 +494,7 @@ width: 80vw;
   z-index: 2;
   position: sticky;
   top: 0;
+  display: block;
 }
 
 .topnav #myLinks {
@@ -576,6 +581,7 @@ display: block;
 animation: none;
 top: 250px;
 text-shadow: none;
+font-family:'Courier New', Courier, monospace;
 }
 
 .text1 {
@@ -592,6 +598,7 @@ display: block;
 animation: none;
 top: 100px;
 text-shadow: none;
+font-family:'Courier New', Courier, monospace;
 }
 
 .text2 {
@@ -608,6 +615,7 @@ display: block;
 animation: none;
 top: 100px;
 text-shadow: none;
+font-family:'Courier New', Courier, monospace;
 }
 
 .text3 {
@@ -624,6 +632,7 @@ display: block;
 animation: none;
 top: 100px;
 text-shadow: none;
+font-family:'Courier New', Courier, monospace;
 }
 
 .text4 {
@@ -640,6 +649,7 @@ display: block;
 animation: none;
 top: 100px;
 text-shadow: none;
+font-family:'Courier New', Courier, monospace;
 }
 
 .text5 {
@@ -656,6 +666,7 @@ display: block;
 animation: none;
 top: 100px;
 text-shadow: none;
+font-family:'Courier New', Courier, monospace;
 }
 
 .text6 {
@@ -672,6 +683,7 @@ display: block;
 animation: none;
 top: 100px;
 text-shadow: none;
+font-family:'Courier New', Courier, monospace;
 }
 
 .text7 {
@@ -690,6 +702,7 @@ display: block;
 animation: none;
 top: 100px;
 text-shadow: none;
+
 }
 
 .cvimg {
